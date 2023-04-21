@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Tic-Tac-Toe</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    canvas {
+      margin: 20px;
+      border: 2px solid #000;
+      background-size: cover;
+      background-image: url('https://i.imgur.com/s84cXOW.jpeg');
+    }
+  </style>
+</head>
+
+<body>
+  <canvas id="tic-tac-toe" width="600" height="600"></canvas>
+  <script>
+    var canvas = document.getElementById("tic-tac-toe");
+    var context = canvas.getContext("2d");
+
+    // Draw the Tic-Tac-Toe grid
+    context.beginPath();
+    context.moveTo(200, 0);
+    context.lineTo(200, 600);
+    context.moveTo(400, 0);
+    context.lineTo(400, 600);
+    context.moveTo(0, 200);
+    context.lineTo(600, 200);
+    context.moveTo(0, 400);
+    context.lineTo(600, 400);
+    context.stroke();
+
+    // Draw X's and O's
+    context.font = "80px Arial";
+    context.textAlign = "center";
+    context.textBaseline = "middle";
+    context.fillText("X", 100, 100);
+    context.fillText("O", 300, 100);
+    context.fillText("X", 500, 100);
+    context.fillText("O", 100, 300);
+    context.fillText("X", 300, 300);
+    context.fillText("O", 500, 300);
+    context.fillText("X", 100, 500);
+    context.fillText("O", 300, 500);
+    context.fillText("X", 500, 500);
+  </script>
+</body>
+
+</html>

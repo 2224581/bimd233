@@ -10,6 +10,4 @@ cd public_html/bimd233 && git pull
 ```
 ```
 git stash
-```# bimd233
-# bimd233
-# bimd233
+```
