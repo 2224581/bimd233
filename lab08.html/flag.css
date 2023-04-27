@@ -1,0 +1,25 @@
+table {
+  background-color: navy;
+  border-spacing: 0px;
+}
+
+#stars {
+  height: 259.7402597403px;
+  width: 300.7518796992px;
+  color: white;
+}
+
+.red_stripe {
+  background-color: red;
+  height: 30.7692307692px;
+}
+
+.white_stripe {
+  background-color: white;
+  height: 30.7692307692px;
+}
+
+.stripes {
+  height: 30.7692307692px;
+  width: 711.1111111111px;
+}

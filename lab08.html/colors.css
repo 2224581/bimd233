@@ -1,0 +1,64 @@
+body {
+  text-align: center;
+}
+
+table {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.RGB1 {
+  background-color: rgba(255, 0, 0, 0.9);
+}
+.RGB2 {
+  background-color: rgba(255, 0, 0, 0.8);
+}
+.RGB3 {
+  background-color: rgba(255, 0, 0, 0.7);
+}
+.RGB4 {
+  background-color: rgba(255, 0, 0, 0.6);
+}
+.RGB5 {
+  background-color: rgba(255, 0, 0, 0.5);
+}
+.RGB6 {
+  background-color: rgba(255, 0, 0, 0.4);
+}
+.RGB7 {
+  background-color: rgba(255, 0, 0, 0.3);
+}
+.RGB8 {
+  background-color: rgba(255, 0, 0, 0.2);
+}
+.RGB9 {
+  background-color: rgba(255, 0, 0, 0.1);
+}
+
+.HSL1 {
+  background-color: hsla(240, 100%, 50%, 0.9);
+}
+.HSL2 {
+  background-color: hsla(240, 100%, 50%, 0.8);
+}
+.HSL3 {
+  background-color: hsla(240, 100%, 50%, 0.7);
+}
+.HSL4 {
+  background-color: hsla(240, 100%, 50%, 0.6);
+}
+.HSL5 {
+  background-color: hsla(240, 100%, 50%, 0.5);
+}
+.HSL6 {
+  background-color: hsla(240, 100%, 50%, 0.4);
+}
+.HSL7 {
+  background-color: hsla(240, 100%, 50%, 0.3);
+}
+.HSL8 {
+  background-color: hsla(240, 100%, 50%, 0.2);
+}
+.HSL9 {
+  background-color: hsla(240, 100%, 50%, 0.1);
+}
