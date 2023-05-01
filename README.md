@@ -8,6 +8,3 @@ ssh vergil
 ```
 cd public_html/bimd233 && git pull
 ```
-```
-git stash
-```
