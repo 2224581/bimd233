@@ -1,0 +1,18 @@
+body,
+.bg-purple {
+    background-color: #3e0070;
+}
+
+.form-control {
+    height: 30px;
+    border: none;
+}
+
+.bg-dark {
+    background-color: #2f2f2f !important;
+}
+
+.jumbotron,
+.text-purple {
+    color: #3e0070;
+}
