@@ -14,44 +14,75 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
     </script>
     <link rel="stylesheet" href="./style.css">
+    <style>
+        body,
+        .bg-purple {
+            background-color: black !important;
+            color: white !important;
+        }
+
+        .bg-dark,
+        .card {
+            background-color: #23252a !important;
+            color: white !important;
+        }
+
+        .navbar {
+            height: 60px;
+        }
+    </style>
 </head>
 
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <img src="assest/logo.png" alt="logo" height="70px">
-        <h3 class="navbar-brand mt-2">Web</h3>
+        <a href="https://www.crunchyroll.com/"><img src="assest/Anime/Crunchyroll-Logo.png" alt="Crunchyroll Logo"
+                height="90px"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">BitBucket <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Bootstrap</a>
-                </li>
                 <!-- Dropdown -->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Labs </a>
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Browse </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Capstone Drafts</a>
+                        <a class="dropdown-item" href="https://www.crunchyroll.com/videos/popular">Popular</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="../lab01.html">Lab1</a>
-                        <a class="dropdown-item" href="../lab02.html">Lab2</a>
-                        <a class="dropdown-item" href="../lab03.html">Lab3</a>
-                        <a class="dropdown-item" href="../lab04.html">Lab4</a>
-                        <a class="dropdown-item" href="../lab05.html">Lab5</a>
-                        <a class="dropdown-item" href="../lab06.html">Lab6</a>
-                        <a class="dropdown-item" href="../lab07.html">Lab7</a>
-                        <a class="dropdown-item" href="../lab08.html">Lab8</a>
+                        <a class="dropdown-item" href="https://www.crunchyroll.com/videos/new">New</a>
+                        <a class="dropdown-item" href="https://www.crunchyroll.com/videos/alphabetical">Alphabetical</a>
+                        <a class="dropdown-item"
+                            href="https://www.crunchyroll.com/simulcasts/seasons/spring-2023">Simulcasts Seasons</a>
+                        <a class="dropdown-item" href="https://www.crunchyroll.com/simulcastcalendar">Release
+                            Calendar</a>
+                        <a class="dropdown-item" href="https://www.crunchyroll.com/music">Music Video & Concerts</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="../../lavender_repo/lavender.html">Lavender</a>
+                        <a class="dropdown-item" href="#">GENRES</a>
                     </div>
                 </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="https://www.crunchyroll.com/comics/manga">Manga<span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.crunchyroll.com/games/index.html">Games</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://store.crunchyroll.com/">Store</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">News</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="https://www.crunchyroll.com/news">All News</a>
+                        <a class="dropdown-item" href="https://www.crunchyroll.com/animeawards/index.html">Anime
+                            Awards</a>
+                        <a class="dropdown-item" href="https://www.crunchyrollexpo.com/">Crunchyroll
+                            Expo</a>
+                        <a class="dropdown-item" href="https://www.crunchyrollmovienight.com/">Anime Movie Night</a>
+                    </div>
             </ul>
             <form class="form-inline my-2 my-lg-0 ml-auto" method="post"
                 action="http://courses.washington.edu/bimd233/bimd.php">
@@ -72,25 +103,16 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="d-block w-100" src="assest/Anime/1.png" alt="First slide">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Lorem</h5>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A, laudantium one.</p>
-                </div>
+                <a href="https://www.crunchyroll.com/series/GJ0H7Q5V7/"><img class="d-block w-100"
+                        src="assest/Anime/1.png" alt="First slide"></a>
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="assest/Anime/2.png" alt="Second slide">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Lorem</h5>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A, laudantium two.</p>
-                </div>
+                <a href="https://www.crunchyroll.com/series/GNVHKNP4J/"><img class="d-block w-100"
+                        src="assest/Anime/2.png" alt="Second slide"></a>
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="assest/Anime/3.png" alt="Third slide">
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>Lorem</h5>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A, laudantium three.</p>
-                </div>
+                <a href="https://www.crunchyroll.com/series/GJ0H7Q5ZJ/"><img class="d-block w-100"
+                        src="assest/Anime/3.png" alt="Third slide"></a>
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -107,31 +129,31 @@
         <div class="row">
             <div class="col-lg-4 col-md-6 col-sm-12 mt-3">
                 <div class="card " style="width: 18rem;">
-                    <img src="assest/Anime/Roles.png" class="card-img" alt="img">
+                    <a href="https://www.crunchyroll.com/series/GJ0H7Q5V7/"><img src="assest/Anime/1.webp"
+                            class="card-img" alt="KONOSUBA -An Explosion on This Wonderful World!"></a>
                     <div class="card-body">
-                        <h5 class="card-title mt-2">First Card</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        <a href="#" class="btn btn-primary">See More</a>
+                        <h5 class="card-title mt-2">KONOSUBA -An Explosion on This Wonderful World!</h5>
+                        <a href="https://www.crunchyroll.com/series/GJ0H7Q5V7/" class="btn btn-primary">See More</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12 mt-3">
                 <div class="card " style="width: 18rem;">
-                    <img src="assest/Anime/Rules.png" class="card-img" alt="img">
+                    <a href="https://www.crunchyroll.com/series/GNVHKNP4J/"><img src="assest/Anime/2.webp"
+                            class="card-img" alt="KamiKatsu: Working for God in a Godless World"></a>
                     <div class="card-body">
-                        <h5 class="card-title mt-2">Second Card</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        <a href="#" class="btn btn-primary">See More</a>
+                        <h5 class="card-title mt-2">KamiKatsu: Working for God in a Godless World</h5>
+                        <a href="https://www.crunchyroll.com/series/GNVHKNP4J/" class="btn btn-primary">See More</a>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12 mt-3">
                 <div class="card " style="width: 18rem;">
-                    <img src="assest/Anime/Info.png" class="card-img" alt="img">
+                    <a href="https://www.crunchyroll.com/series/GJ0H7Q5ZJ/"><img src="assest/Anime/3.webp"
+                            class="card-img" alt="Hell's Paradise"></a>
                     <div class="card-body">
-                        <h5 class="card-title mt-2">Third Card</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                        <a href="#" class="btn btn-primary">See More</a>
+                        <h5 class="card-title mt-2">Hell's Paradise</h5>
+                        <a href="https://www.crunchyroll.com/series/GJ0H7Q5ZJ/" class="btn btn-primary">See More</a>
                     </div>
                 </div>
             </div>
