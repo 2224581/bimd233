@@ -1,0 +1,25 @@
+body {
+    font-family: 'courier new', courier;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    background-color: rgb(194, 224, 244);
+    height: 35px;
+}
+
+tr {
+    padding: 5px 10px;
+    height: 29px;
+    width: auto;
+}
+
+img {
+    max-width: 650px;
+    width: 100%;
+}
