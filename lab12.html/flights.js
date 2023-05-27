@@ -23,22 +23,20 @@ flights.forEach(function (flightData) {
     destination.textContent = flightData[3];
     row.appendChild(destination);
 
-    var depTime = document.createElement("td");
-    depTime.textContent = flightData[4];
-    row.appendChild(depTime);
+    var departureTime = document.createElement("td");
+    departureTime.textContent = flightData[4];
+    row.appendChild(departureTime);
 
     var arrivalTime = document.createElement("td");
     arrivalTime.textContent = flightData[5];
     row.appendChild(arrivalTime);
 
+    var duration = document.createElement("td");
     var t2 = new Date(flightData[4]);
     var t3 = new Date(flightData[5]);
     var diff = t3.getTime() - t2.getTime();
-    var duration = new Date(diff);
-
-    var durationCell = document.createElement("td");
-    durationCell.textContent = duration.getUTCHours() + ':' + duration.getUTCMinutes() + ':' + duration.getUTCSeconds();
-    row.appendChild(durationCell);
+    duration.textContent = new Date(diff).getUTCHours() + ':' + new Date(diff).getUTCMinutes() + ':' + new Date(diff).getUTCSeconds();
+    row.appendChild(duration);
 
     tableBody.appendChild(row);
 });
