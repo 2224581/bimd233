@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>weather.html</title>
+        <link rel="stylesheet" href="weather.css">
+    </head>
+
+    <body>
+        <div class="center">
+            <h1>Temperature Averages</h1>
+            <p id="averageHigh"></p>
+            <p id="averageLow"></p>
+            <p id="overallAverage"></p>
+        </div>
+        <table id="temperatureTable">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>High/Low</th>
+                    <th>Conditions</th>
+                    <th>Chance of Rain</th>
+                    <th>Wind</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <script>
+            const temperatureData = [
+                { day: "fri", date: "May 13", hi: 82, lo: 55, conditions: "Sunny", rain: 70, wind: "N 9 mph" },
+                { day: "sat", date: "May 14", hi: 75, lo: 52, conditions: "Cloudy", rain: 20, wind: "WSW 6 mph" },
+                { day: "sun", date: "May 15", hi: 69, lo: 52, conditions: "Showers", rain: 60, wind: "SSW 8 mph" },
+                { day: "mon", date: "May 16", hi: 69, lo: 48, conditions: "Cloudy", rain: 20, wind: "SSW 8 mph" },
+                { day: "tue", date: "May 17", hi: 68, lo: 51, conditions: "Showers", rain: 40, wind: "SW 7 mph" }
+            ];
+
+            function calculateAverageTemperature(data, property) {
+                const sum = data.reduce((total, day) => total + day[property], 0);
+                return sum / data.length;
+            }
+
+            const averageHighTemp = calculateAverageTemperature(temperatureData, 'hi');
+            const averageLowTemp = calculateAverageTemperature(temperatureData, 'lo');
+            const overallAverageTemp = (averageHighTemp + averageLowTemp) / 2;
+
+            document.getElementById('averageHigh').innerHTML = `Average High Temp: ${averageHighTemp.toFixed(2)} &deg;`;
+            document.getElementById('averageLow').innerHTML = `Average Low Temp: ${averageLowTemp.toFixed(2)} &deg;`;
+            document.getElementById('overallAverage').innerHTML = `Overall Average Temp: ${overallAverageTemp.toFixed(2)} &deg;`;
+
+            const tableBody = document.querySelector('#temperatureTable tbody');
+            temperatureData.forEach(day => {
+                const row = document.createElement('tr');
+                const dateCell = document.createElement('td');
+                dateCell.innerHTML = `<div class="flex"><span class="day">${day.day.toUpperCase()}</span><span class="date">${day.date}</span></div>`;
+                row.appendChild(dateCell);
+                const tempCell = document.createElement('td');
+                tempCell.innerHTML = `${day.hi} &deg;<span class="light">/ <small>${day.lo} &deg;</small></span>`;
+                row.appendChild(tempCell);
+                let img = '';
+                if (day.conditions == 'Sunny') {
+                    img = `<img src="sunny.png">`;
+                }else if (day.conditions == 'Cloudy') {
+                    img = `<img src="cloudy.png">`;
+                }else if (day.conditions == 'Showers') {
+                    img = `<img src="showers.png">`;
+                }
+                const conditionsCell = document.createElement('td');
+                // conditionsCell.classList.add('flex');
+                conditionsCell.innerHTML = `${img} <span>${day.conditions}</span>`;
+                row.appendChild(conditionsCell);
+                const rainCell = document.createElement('td');
+                rainCell.innerHTML = `${day.rain}%`;
+                row.appendChild(rainCell);
+                const windCell = document.createElement('td');
+                windCell.innerHTML = day.wind;
+                row.appendChild(windCell);
+                tableBody.appendChild(row);
+            });
+        </script>
+    </body>
+
+</html>

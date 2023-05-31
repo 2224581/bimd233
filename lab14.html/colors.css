@@ -1,0 +1,73 @@
+table,
+th,
+td {
+    border-collapse: collapse;
+    border: 1px solid;
+}
+
+th,
+td {
+    padding: 5px;
+}
+
+th {
+    font-weight: bold;
+    font-size: 14pt;
+    vertical-align: bottom;
+}
+
+.logo {
+    width: 80px;
+    text-align: center;
+}
+
+.name {
+    width: 150px;
+    text-align: left;
+}
+
+.range {
+    width: 100px;
+    text-align: center;
+}
+
+.last {
+    width: 150px;
+    text-align: left;
+}
+
+/* Oregon State */
+#beavs {
+    background-color: #252525;
+    color: #cc4500;
+}
+
+/* University of Oregon */
+#ducks {
+    background-color: #154733;
+    color: yellow;
+}
+
+/* University of Washington */
+#huskies {
+    background-color: #4b2e83;
+    color: #b7a57a;
+}
+
+/* California */
+#oskis {
+    background-color: #081f3f;
+    color: #fcb326;
+}
+
+/* Stanford */
+#trees {
+    background-color: #990000;
+    color: lightgray;
+}
+
+/* Washington State */
+#cougs {
+    background-color: #981e32;
+    color: #5e6a71;
+}

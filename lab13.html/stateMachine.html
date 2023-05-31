@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>State Machine</title>
+    <style>
+        body {
+            background-color: #000000;
+            font-family: sans-serif;
+            text-align: center;
+            color: #ffffff;
+            zoom: 1.25;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>State Machine</h1>
+    <p id="currentState">Current State: Idle</p>
+    <img id="stateImage" src="stateMachine.png">
+
+    <script defer>
+        var state = "Idle";
+        var cmd = "nop";
+
+        function updateStateMessage() {
+            document.getElementById("currentState").textContent = "Current State: " + state;
+        }
+
+        window.onload = function () {
+            updateStateMessage();
+            setTimeout(function () {
+                executeStateMachine();
+            }, 300);
+        };
+
+        function executeStateMachine() {
+            do {
+                switch (state) {
+                    case "Idle":
+                        if (cmd === "run") {
+                            state = "S1";
+                        }
+                        break;
+
+                    case "S1":
+                        if (cmd === "next") {
+                            state = "S2";
+                        }
+                        if (cmd === "skip") {
+                            state = "S3";
+                        }
+                        if (cmd === "prev") {
+                            state = "S4";
+                        }
+                        break;
+
+                    case "S2":
+                        if (cmd === "next") {
+                            state = "S3";
+                        }
+                        break;
+
+                    case "S3":
+                        if (cmd === "next") {
+                            state = "S4";
+                        }
+                        if (cmd === "home") {
+                            state = "Idle";
+                        }
+                        break;
+
+                    case "S4":
+                        if (cmd === "next") {
+                            state = "S1";
+                        }
+                        break;
+
+                    default:
+                        break;
+                }
+
+                updateStateMessage();
+                cmd = prompt("Enter a command from below (" + state + "):", "next");
+            } while (cmd !== "exit" && cmd !== "quit");
+
+            updateStateMessage();
+        }
+    </script>
+</body>
+
+</html>
