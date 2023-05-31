@@ -10,7 +10,7 @@ var stocks = [
         companyName: "Symetra Financial",
         marketCap: "$2.7 B",
         sales: "$2.2 B",
-        profit: "$254.4M",
+        profit: "$254.4 M",
         numEmployees: 1400
     },
     {
