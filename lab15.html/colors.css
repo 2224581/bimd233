@@ -1,0 +1,151 @@
+html::before {
+    content: ' ';
+    display: block;
+    background-image: url(images/background.png);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: -10;
+}
+
+h1 {
+    color: white;
+}
+
+table,
+th,
+td {
+    border-collapse: collapse;
+    border: 1px solid;
+}
+
+th,
+td {
+    padding: 5px;
+}
+
+th {
+    font-weight: bold;
+    font-size: 14pt;
+    vertical-align: bottom;
+}
+
+.logo {
+    width: 80px;
+    color: white;
+    text-align: center;
+    background-color: #252525;
+}
+
+.name {
+    width: 150px;
+    color: white;
+    text-align: left;
+    background-color: #252525;
+}
+
+.range {
+    width: 100px;
+    color: white;
+    text-align: center;
+    background-color: #252525;
+}
+
+.last {
+    width: 150px;
+    color: white;
+    text-align: left;
+    background-color: #252525;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.table-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Add hover styles for table rows */
+tr:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* University of Oregon */
+#ducks {
+    background-color: #154733;
+    color: yellow;
+}
+
+#ducks:hover {
+    background-image: url(images/mpv-shot0005.png);
+    background-size: cover;
+}
+
+/* Washington State */
+#cougs {
+    background-color: #981e32;
+    color: #5e6a71;
+}
+
+#cougs:hover {
+    background-image: url(images/mpv-shot0002.png);
+    background-size: cover;
+}
+
+/* Oregon State */
+#beavs {
+    background-color: #252525;
+    color: #cc4500;
+}
+
+#beavs:hover {
+    background-image: url(images/mpv-shot0004.png);
+    background-size: cover;
+}
+
+/* California */
+#oskis {
+    background-color: #081f3f;
+    color: #fcb326;
+}
+
+#oskis:hover {
+    background-image: url(images/mpv-shot0001.png);
+    background-size: cover;
+}
+
+/* University of Washington */
+#huskies {
+    background-color: #4b2e83;
+    color: #b7a57a;
+}
+
+#huskies:hover {
+    background-image: url(images/mpv-shot0003.png);
+    background-size: cover;
+}
+
+/* Stanford */
+#trees {
+    background-color: #990000;
+    color: lightgray;
+}
+
+#trees:hover {
+    background-image: url(images/mpv-shot0006.png);
+    background-size: cover;
+}
